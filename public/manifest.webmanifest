@@ -1,0 +1,13 @@
+{
+  "name": "Hospitality Portfolio CMS",
+  "short_name": "PortfolioCMS",
+  "description": "Portfolio website and admin CMS for a hospitality academic professional.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "icons": [
+    { "src": "/pwa-192.svg", "sizes": "192x192", "type": "image/svg+xml" },
+    { "src": "/pwa-512.svg", "sizes": "512x512", "type": "image/svg+xml" }
+  ]
+}
