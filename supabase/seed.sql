@@ -7,7 +7,7 @@ insert into public.site_settings (key, value) values
 ('layout', '{"sectionSpacing":"5rem","containerWidth":"1160px","borderRadius":"1.25rem","cardStyle":"soft-elevated","shadowStyle":"0 20px 45px rgba(15,23,42,.08)"}'),
 ('images', '{"heroImageUrl":"https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80","profileImageUrl":"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80","backgroundImageUrl":"","bannerImageUrl":"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"}'),
 ('seo', '{"metaTitle":"Hospitality Instructor, Trainer & Consultant Portfolio","metaDescription":"Professional portfolio for a hospitality instructor, trainer, educator, consultant, and academic professional.","keywords":"hospitality instructor, hospitality consultant, trainer, educator, academic professional","ogTitle":"Hospitality Professional Portfolio","ogDescription":"Explore qualifications, teaching portfolio, consultancy work, certifications, and achievements."}'),
-('social', '{"linkedin":"https://linkedin.com","facebook":"https://facebook.com","instagram":"https://instagram.com","youtube":"https://youtube.com","github":"https://github.com","whatsapp":"https://wa.me/0000000000"}')
+('social', '{"linkedin":"https://linkedin.com","facebook":"https://facebook.com","instagram":"https://instagram.com","youtube":"https://youtube.com","github":"https://github.com","whatsapp":"https://wa.me/923401614863"}')
 on conflict (key) do update set value = excluded.value;
 
 insert into public.home_profiles (name, professional_title, hero_text, profile_image_url, resume_url, qr_code_url, social_links, achievements, stats) values (
@@ -17,7 +17,7 @@ insert into public.home_profiles (name, professional_title, hero_text, profile_i
 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80',
 '#',
 '/qr-placeholder.svg',
-'{"linkedin":"https://linkedin.com","facebook":"https://facebook.com","instagram":"https://instagram.com","youtube":"https://youtube.com","github":"https://github.com","whatsapp":"https://wa.me/0000000000"}',
+'{"linkedin":"https://linkedin.com","facebook":"https://facebook.com","instagram":"https://instagram.com","youtube":"https://youtube.com","github":"https://github.com","whatsapp":"https://wa.me/923401614863"}',
 '["15+ years in hospitality education and industry training","Designed 40+ training modules for hotels, colleges, and service teams","Consulted on guest experience, SOP design, and service quality audits"]',
 '[{"label":"Learners Trained","value":"4,500+"},{"label":"Academic Courses","value":"28"},{"label":"Consultancy Projects","value":"35+"},{"label":"Certifications","value":"18"}]'
 );
@@ -67,4 +67,4 @@ insert into public.testimonials (name, role, quote, image_url, sort_order) value
 ('Sara Khan', 'Hospitality Graduate', 'Her classes made hotel operations easy to understand because every lesson connected to real guest situations.', '', 2);
 
 insert into public.contact_info (phone, email, website_url, office_address, social_links) values
-('+971 00 000 0000', 'amina.rahman@example.com', 'https://example.com', 'Hospitality Training Centre, Academic City', '{"linkedin":"https://linkedin.com","facebook":"https://facebook.com","instagram":"https://instagram.com","youtube":"https://youtube.com","github":"https://github.com","whatsapp":"https://wa.me/0000000000"}');
+('+971 00 000 0000', 'amina.rahman@example.com', 'https://example.com', 'Hospitality Training Centre, Academic City', '{"linkedin":"https://linkedin.com","facebook":"https://facebook.com","instagram":"https://instagram.com","youtube":"https://youtube.com","github":"https://github.com","whatsapp":"https://wa.me/923401614863"}');

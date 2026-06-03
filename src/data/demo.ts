@@ -46,7 +46,7 @@ export const defaultSettings = {
     instagram: 'https://instagram.com',
     youtube: 'https://youtube.com',
     github: 'https://github.com',
-    whatsapp: 'https://wa.me/0000000000'
+    whatsapp: 'https://wa.me/923401614863'
   }
 };
 
