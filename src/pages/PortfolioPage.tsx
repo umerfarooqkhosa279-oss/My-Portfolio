@@ -192,7 +192,7 @@ export default function PortfolioPage() {
         </section>
 
         <Section id="about" eyebrow="About" title="Academic profile built on practice">
-          {content.about_sections.length ? <div className="grid gap-5 md:grid-cols-2">{content.about_sections.map((item: any) => <Card key={item.id}><h3 className="mb-3 text-xl">{item.title}</h3><p className="leading-7 text-justify text-slate-600 dark:text-slate-300">{item.body}</p></Card>)}</div> : <EmptyState label="No about content yet." />}
+          {content.about_sections.length ? <div className="grid gap-5 md:grid-cols-2">{content.about_sections.map((item: any) => <Card key={item.id}><h3 className="mb-3 text-xl">{item.title}</h3><p className="leading-7 text-slate-600 dark:text-slate-300" style={{textAlign: 'justify'}}>{item.body}</p></Card>)}</div> : <EmptyState label="No about content yet." />}
         </Section>
 
         <Section id="experience" eyebrow="Experience" title="Professional experience">
