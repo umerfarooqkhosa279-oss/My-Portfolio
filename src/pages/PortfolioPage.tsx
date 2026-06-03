@@ -156,7 +156,7 @@ export default function PortfolioPage() {
               <p className="mb-4 inline-flex rounded-full bg-teal-50 px-4 py-2 text-sm font-bold text-brand-primary ring-1 ring-teal-100 dark:bg-teal-950/40 dark:ring-teal-900">Hospitality Education • Training • Consultancy</p>
               <h1 className="text-4xl leading-tight text-slate-950 dark:text-white md:text-6xl">{home.name}</h1>
               <h2 className="mt-4 text-xl font-semibold text-brand-primary md:text-2xl">{home.professional_title}</h2>
-              <p className="mt-6 max-w-2xl text-justify text-lg leading-8 text-slate-600 dark:text-slate-300">{home.hero_text}</p>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300" style={{ textAlign: 'justify' }}>{home.hero_text}</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 {home.resume_url && <ButtonLink href={home.resume_url}><Download className="mr-2" size={18} /> Download CV</ButtonLink>}
                 <ButtonLink href="#contact" variant="light">Contact Me</ButtonLink>
