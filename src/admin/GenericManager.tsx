@@ -28,10 +28,20 @@ export default function GenericManager({ config, onChanged }: { config: ManagerC
     setLoading(true);
     try {
       if (!supabase) throw new Error('Supabase is not configured.');
-      const { data, error } = await supabase.from(config.table).select('*').order('sort_order', { ascending: true });
+
+      const query = config.singleton
+        ? supabase.from(config.table).select('*').order('updated_at', { ascending: false }).limit(1)
+        : supabase.from(config.table).select('*').order('sort_order', { ascending: true });
+
+      const { data, error } = await query;
       if (error) throw error;
-      setRecords(data || []);
-      if (config.singleton && data?.[0] && !editing) setEditing(data[0]);
+
+      const rows = data || [];
+      setRecords(rows);
+
+      // Singleton sections such as Home and Contact should always show one edit form.
+      // If no row exists yet, show an empty form so the admin can create it.
+      if (config.singleton) setEditing(rows[0] || emptyRecord(config));
     } catch (error: any) {
       setMessage(error.message);
     } finally {
@@ -55,7 +65,7 @@ export default function GenericManager({ config, onChanged }: { config: ManagerC
         if (error) throw error;
       }
       setMessage('Saved successfully.');
-      setEditing(config.singleton ? editing : null);
+      if (!config.singleton) setEditing(null);
       await load();
       onChanged?.();
     } catch (error: any) {
