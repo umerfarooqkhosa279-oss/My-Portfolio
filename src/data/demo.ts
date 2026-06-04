@@ -58,11 +58,11 @@ export const demoHome = {
   resume_url: '#',
   qr_code_url: '/qr-placeholder.svg',
   social_links: defaultSettings.social,
-  achievements: [
-    '15+ years in hospitality education and industry training',
-    'Designed 40+ training modules for hotels, colleges, and service teams',
-    'Consulted on guest experience, SOP design, and service quality audits'
-  ],
+ achievements: [
+  'Completed one-year Diploma in Culinary Arts with multi-cuisine practical training',
+  'Taught NAVTTC Professional Cook batch of 6 months at ITHM Multan Campus',
+  'Currently training in Food Processing at TEVTA, Multan while actively instructing',
+],
   stats: [
     { label: 'Learners Trained', value: '4,500+' },
     { label: 'Academic Courses', value: '28' },
