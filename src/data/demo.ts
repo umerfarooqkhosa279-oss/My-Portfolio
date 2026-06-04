@@ -37,7 +37,7 @@ export const defaultSettings = {
     metaTitle: 'Hospitality Instructor, Trainer & Consultant Portfolio',
     metaDescription: 'Professional portfolio for a hospitality instructor, trainer, educator, consultant, and academic professional.',
     keywords: 'hospitality instructor, hospitality consultant, trainer, educator, academic professional',
-    ogTitle: 'Hospitality Professional Portfolio',
+    ogTitle: 'Chef Umer Farooq Portfolio',
     ogDescription: 'Explore qualifications, teaching portfolio, consultancy work, certifications, and achievements.'
   },
   social: {
