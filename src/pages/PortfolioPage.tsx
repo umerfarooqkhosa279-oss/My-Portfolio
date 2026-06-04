@@ -196,7 +196,7 @@ export default function PortfolioPage() {
                 <img className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl" src={home.profile_image_url || settings.images?.profileImageUrl} alt={home.name} loading="eager" />
                 <div className="absolute -bottom-6 -left-4 rounded-3xl bg-white p-5 shadow-app dark:bg-slate-900">
                   <div className="flex items-center gap-3"><Award className="text-brand-accent" /><span className="font-extrabold">Featured Professional</span></div>
-                  <p className="mt-1 text-sm text-slate-500">Academic, trainer, and consultant profile</p>
+                  <p className="mt-1 text-sm text-slate-500">Chef, Instructor & Food Processing Trainee</p>
                 </div>
               </div>
             )}
