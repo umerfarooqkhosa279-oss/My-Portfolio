@@ -211,7 +211,7 @@ npm run build</p>
             {!!home.achievements?.length && (
               <Card>
                 <h3 className="mb-4 text-xl">Featured Achievements</h3>
-                <div className="grid gap-3 md:grid-cols-3">{home.achievements.map((a: string) => <div key={a} className="rounded-2xl bg-slate-50 p-4 text-sm dark:bg-slate-900"><Star className="mb-3 text-brand-accent" size={18} />{a}</div>)}</div>
+                <div className="grid gap-3 md:grid-cols-3">{home.achievements.map((a: string) => <div key={a} className="rounded-2xl bg-slate-50 p-4 text-sm dark:bg-slate-900"><Star className="mb-3 text-brand-accent" size={18} style={{ textAlign: 'justify' }} />{a}</div>)}</div>
               </Card>
             )}
             {home.qr_code_url && <Card className="text-center"><QrCode className="mx-auto mb-3 text-brand-primary" /><img src={home.qr_code_url} alt="QR code" className="mx-auto h-32 w-32" loading="lazy" /><p className="mt-3 text-sm text-slate-500">Scan for profile / CV</p></Card>}
