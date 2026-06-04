@@ -258,7 +258,7 @@ npm run build</p>
           {content.testimonials.length ? <div className="grid gap-5 md:grid-cols-2">{content.testimonials.map((item: any) => <Card key={item.id}><p className="text-lg leading-8 text-slate-600 dark:text-slate-300">“{item.quote}”</p><div className="mt-5"><p className="font-bold">{item.name}</p><p className="text-sm text-slate-500">{item.role}</p></div></Card>)}</div> : <EmptyState label="No testimonials yet." />}
         </Section>
 
-        <Section id="contact" eyebrow="Contact" title="Invite me for training, teaching, or consultancy">
+        <Section id="contact" eyebrow="Contact" title="Available for culinary training, teaching opportunities, and cruise ship roles">
           <div className="grid gap-8 lg:grid-cols-[.85fr_1.15fr]">
             <Card>
               {contact ? (
