@@ -196,7 +196,8 @@ export default function PortfolioPage() {
                 <img className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl" src={home.profile_image_url || settings.images?.profileImageUrl} alt={home.name} loading="eager" />
                 <div className="absolute -bottom-6 -left-4 rounded-3xl bg-white p-5 shadow-app dark:bg-slate-900">
                   <div className="flex items-center gap-3"><Award className="text-brand-accent" /><span className="font-extrabold">Featured Professional</span></div>
-                  <p className="mt-1 text-sm text-slate-500">Chef, Instructor & Food Processing Trainee</p>
+                  <p className="mt-1 text-sm text-slate-500">Chef, Instructor & Food Processing Traineenpm install
+npm run build</p>
                 </div>
               </div>
             )}
@@ -217,7 +218,7 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        <Section id="about" eyebrow="About" title="Academic profile built on practice">
+        <Section id="about" eyebrow="About" title="Culinary profile built on passion and practice">
           {content.about_sections.length ? <div className="grid gap-5 md:grid-cols-2">{content.about_sections.map((item: any) => <Card key={item.id}><h3 className="mb-3 text-xl">{item.title}</h3><p className="leading-7 text-slate-600 dark:text-slate-300">{item.body}</p></Card>)}</div> : <EmptyState label="No about content yet." />}
         </Section>
 
