@@ -18,7 +18,7 @@ insert into public.home_profiles (name, professional_title, hero_text, profile_i
 '#',
 '/qr-placeholder.svg',
 '{"linkedin":"https://linkedin.com","facebook":"https://facebook.com","instagram":"https://instagram.com","youtube":"https://youtube.com","github":"https://github.com","whatsapp":"https://wa.me/923401614863"}',
-'["15+ years in hospitality education and industry training","Designed 40+ training modules for hotels, colleges, and service teams","Consulted on guest experience, SOP design, and service quality audits"]',
+'["Completed one-year Diploma in Culinary Arts with multi-cuisine practical training","Taught NAVTTC Professional Cook batch of 6 months at ITHM Multan Campus","Currently training in Food Processing at TEVTA, Multan while actively instructing"]',
 '[{"label":"Learners Trained","value":"4,500+"},{"label":"Academic Courses","value":"28"},{"label":"Consultancy Projects","value":"35+"},{"label":"Certifications","value":"18"}]'
 );
 
