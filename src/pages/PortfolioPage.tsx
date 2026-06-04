@@ -151,7 +151,7 @@ export default function PortfolioPage() {
     ...(settings.social || {}),
     whatsapp: whatsappLink
   };
-  const heroBadgeText = settings.branding?.heroBadgeText || 'Hospitality Education • Training • Consultancy';
+  const heroBadgeText = settings.branding?.heroBadgeText || 'Culinary Arts • Education • Food Processing';
 
   async function submitContact(e: FormEvent) {
     e.preventDefault();
